@@ -1,0 +1,78 @@
+Here are some of the **best PHP code formatter extensions** for **VS Code** 👇
+
+### 🧩 1. **PHP Intelephense**
+
+**Extension ID:** `bmewburn.vscode-intelephense-client`
+**Features:**
+
+* Code formatting (auto-indent, braces, etc.)
+* IntelliSense (smart autocomplete)
+* Function & variable definitions
+* Syntax checking
+
+**How to enable formatting:**
+
+1. Install it from Extensions (`Ctrl + Shift + X` → search “Intelephense”)
+2. Open **Settings → Text Editor → Formatting**
+3. Turn on: **“Format on Save”**
+4. Optional: Add to `settings.json`
+
+   ```json
+   "[php]": {
+     "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+     "editor.formatOnSave": true
+   }
+   ```
+
+---
+
+### 🧩 2. **PHP CS Fixer**
+
+**Extension ID:** `junstyle.php-cs-fixer`
+**Features:**
+
+* Uses the **PHP-CS-Fixer** tool
+* Supports custom rules (PSR-2, PSR-12, Symfony, etc.)
+* Auto-format on save
+
+**Setup:**
+
+1. Install the extension
+2. Install PHP-CS-Fixer globally:
+
+   ```bash
+   composer global require friendsofphp/php-cs-fixer
+   ```
+3. Add to VS Code `settings.json`:
+
+   ```json
+   "php-cs-fixer.executablePath": "~/.composer/vendor/bin/php-cs-fixer",
+   "php-cs-fixer.onsave": true,
+   "php-cs-fixer.rules": "@PSR12"
+   ```
+
+---
+
+### 🧩 3. **Prettier PHP Plugin (Optional)**
+
+If you already use **Prettier** for JS/HTML, you can add PHP support using:
+
+```bash
+npm install --save-dev prettier @prettier/plugin-php
+```
+
+Then, in VS Code:
+
+```json
+"[php]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
+```
+
+---
+
+✅ **Recommendation for You:**
+For simplicity and reliability, use **Intelephense** — it’s fast, doesn’t need extra setup, and formats PHP beautifully.
+If you need stricter coding standards (like PSR-12), use **PHP CS Fixer**.
+
+---
