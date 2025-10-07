@@ -8,5 +8,6 @@ PHP -> LARAVEL -> MySQL/PostgreSQL (backend developer)
 
 ## Deadline
 
-PHP + MYSQL = 2 DAYS
-LARAVEL = 5 DAYS
+- PHP + MYSQL = 2 DAYS
+
+- LARAVEL = 5 DAYS
